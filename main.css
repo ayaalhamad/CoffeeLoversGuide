@@ -1,0 +1,15 @@
+body {
+  background-color: #f0f8ff; /* لون خلفية خفيف */
+}
+
+h1 {
+  color: #2a7ae2; /* لون العنوان */
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+p {
+  color: #333;
+  font-size: 18px;
+  line-height: 1.6;
+}
