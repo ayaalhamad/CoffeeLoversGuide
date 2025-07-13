@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Complex Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      text-align: center;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+    th {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+
+<!-- جدول الأفلام -->
+<table border="1">
+  <tr>
+    <th>Title</th>
+    <th>Genre</th>
+    <th>Opening Day</th>
+    <th>International</th>
+  </tr>
+  <tr>
+    <td>Movie 1</td>
+    <td>Action, Adventure</td>
+    <td>$10,000,000</td>
+    <td>$100,000</td>
+  </tr>
+  <tr>
+    <td>Movie 2</td>
+    <td>Comedy</td>
+    <td>$8,000,000</td>
+    <td>$40,000</td>
+  </tr>
+  <tr>
+    <td>Movie 3</td>
+    <td>Drama</td>
+    <td>$5,000,000</td>
+    <td>$30,000</td>
+  </tr>
+  <tr>
+    <td>Movie 3</td>
+    <td></td>
+    <td>$5,000,000</td>
+    <td>$90,000</td>
+  </tr>
+</table>
+
+<hr>
+
+<!-- جدول المهام -->
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th>Thursday</th>
+    <th><span style="color: blue;">Rowspan</span></th>
+  </tr>
+
+  <!-- Sarah -->
+  <tr>
+    <td><strong>Sarah</strong></td>
+    <td>Task</td>
+    <td>Task</td>
+    <td>Task</td>
+    <td>Exam</td>
+    <td rowspan="4"><span style="color: blue;">colspan</span></td>
+  </tr>
+
+  <!-- John -->
+  <tr>
+    <td><strong>John</strong></td>
+    <td>Math</td>
+    <td>Task</td>
+    <td>Presentation</td>
+    <td>Home</td>
+  </tr>
+
+  <!-- Ada - الصف الأول -->
+  <tr>
+    <td rowspan="3"><strong>Ada</strong></td>
+    <td rowspan="3">Project</td>
+    <td>Project</td>
+    <td>__________</td>
+    <td>Home</td>
+  </tr>
+
+  <!-- Ada - الصف الثاني -->
+  <tr>
+    <td>__________</td>
+    <td>__________</td>
+    <td colspan="2"><span style="color: blue;">Colspan</span></td>
+  </tr>
+
+  <!-- Ada - الصف الثالث -->
+  <tr>
+    <td>Project</td>
+    <td>Draw</td>
+    <td>Presentation</td>
+    <td>Home</td>
+  </tr>
+</table>
+
+</body>
+</html>

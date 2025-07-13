@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Complete Form</title>
+</head>
+<body>
+
+  <h2>📝 Complete User Registration</h2>
+
+  <form action="/submit" method="post">
+    
+    <!-- معلومات المستخدم -->
+    <h3>👤 Personal Information</h3>
+
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" required><br><br>
+
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" required placeholder="example@example.com"><br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required minlength="6" placeholder="Enter your password"><br><br>
+
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age" min="1" max="100" required placeholder="Enter your age"><br><br>
+
+    <label for="birthdate">Birthdate:</label><br>
+    <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+    <!-- اختيار نوع القهوة -->
+    <h3>☕ Favorite Coffee Type</h3>
+
+    <input type="radio" id="espresso" name="coffee" value="Espresso" checked>
+    <label for="espresso">Espresso</label><br>
+
+    <input type="radio" id="latte" name="coffee" value="Latte">
+    <label for="latte">Latte</label><br>
+
+    <input type="radio" id="turkish" name="coffee" value="Turkish">
+    <label for="turkish">Turkish Coffee</label><br><br>
+
+    <!-- إضافات القهوة -->
+    <h3>➕ Add-Ons</h3>
+
+    <input type="checkbox" id="milk" name="extra" value="Milk">
+    <label for="milk">Milk</label><br>
+
+    <input type="checkbox" id="sugar" name="extra" value="Sugar">
+    <label for="sugar">Sugar</label><br>
+
+    <input type="checkbox" id="cream" name="extra" value="Cream" checked>
+    <label for="cream">Cream</label><br><br>
+
+    <!-- زر الإرسال -->
+    <input type="submit" value="Submit Form">
+
+  </form>
+
+</body>
+</html>
+gd
